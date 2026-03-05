@@ -1,0 +1,222 @@
+     :root {
+                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+
+                --content: #43256E;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: DS-Digital;
+                src: url('Fonts/DS-DIGIB.TTF');
+                font-style:normal;
+                font-weight: normal;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                background-size: 65px;
+                color: #fceaff;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            #container {
+                margin-left: 200px;
+                max-width: calc(100% - 200px); 
+                background-color: #13092D;
+                min-height: 100vh;
+            }
+
+            #container a {
+                color: #ED64F5;
+                font-weight: bold;
+            }
+
+            #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                height: 250px;
+                background-image: var(--header-image);
+                background-size: cover;
+                font-size: 60px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 15px;
+                text-transform: uppercase;
+            }
+
+           #navbar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 200px;
+                height: 100vh;
+                background-color: #13092D;
+                padding-top: 20px;
+                z-index: 1000;
+                border-right: 2px solid #ED64F5;
+            }
+            
+            #navbar ul {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                margin: 0;
+                list-style-type: none;
+                gap: 15px;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            #navbar li a {
+                color: #ED64F5;
+                font-weight: 800;
+                text-decoration: none;
+            }
+
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            #clock {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                text-align: center;
+                background: linear-gradient(180deg,rgba(20, 186, 178, 1) 0%, rgba(66, 201, 195, 1) 25%, rgba(145, 250, 250, 1) 75%, rgba(217, 255, 255, 1) 100%);
+                color: black;
+                font-size: 2rem;
+                letter-spacing: 4px;
+                width: 100%;
+                overflow: hidden;
+                border: 2px black solid;
+                border-radius: 5px;
+                font-family: 'DS-Digital', sans-serif;
+            }
+
+            aside {
+                background-color: #241445;
+                width: 200px;
+                padding: 20px;
+                min-width: 200px;
+                flex-shrink: 0;
+                font-size: smaller;
+            }
+
+            main {
+                background-color: #43256E;
+                flex: 1;
+                padding: 20px;
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 2;
+                width: 15%;
+            }
+
+            footer {
+                background-color: #13092D;
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+            }
+
+            h1,h2,h3 {
+                color: #ED64F5;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            strong {
+                color: #ED64F5;
+            }
+
+            .box {
+                background-color: #13092D;
+                border: 1px solid #ED64F5;
+                padding: 10px;
+                resize: vertical;
+                overflow: auto;
+                min-height: 100px;
+            }
+            
+            .btn-88x31{
+              width: 88px;
+              height: 31px;
+            }
+
+            @media only screen and (max-width: 800px) {
+                
+                #navbar {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    border-right: none;
+                    border-bottom: 2px solid #ED64F5;
+                }
+
+                #navbar ul {
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 20px;
+                }
+
+                #container {
+                    margin-left: 0;
+                    max-width: 100%;
+                }
+
+                #flex {
+                    flex-direction: column;
+                }
+
+                aside {
+                    width: 100%;
+                    order: 2;
+                }
+
+                main {
+                    order: 1;
+                }
+            }
