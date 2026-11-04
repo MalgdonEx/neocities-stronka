@@ -11,7 +11,7 @@
     <meta property="og:site_name" content="Mal's Corner">
     <meta property="og:title" content="Mal's Corner">
     <meta property="og:description" content="Personal website of Mal">
-    <meta property="og:image" content="Images/bunny.png">
+    <meta property="og:image" content="https://malgdon.neocities.org/Images/bunny.png">
     
     
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
@@ -30,6 +30,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutme.html">About</a></li>
                         <li><a href="collections.html">Collections</a></li>
+                        <li><a href="guestbook.html">Guest Book</a></li>
+                        <li><a href="chatroom.html">Chatroom</a></li>
                         <li>
                             <details>
                                 <summary>Creations</summary>
@@ -47,32 +49,19 @@
                                 </ul>
                             </details>
                         </li>
-                        <li><a href="guestbook.html">Guest Book</a></li>
-                        <li><a href="chatroom.html">Chatroom</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div id="flex">
             
-                <main>
-                    <h1>Guestbook!</h1>
-                    <iframe style="width: 700px; min-height: 800px;" aria-label="Guestbook" id="guestbook" src="http://users4.smartgb.com/g/g.php?a=s&i=g44-83476-af" frameborder="0"></iframe>
+                <main style="align-items: center; flex-direction: column; display: flex;">
+                    <h1>Guestbook! Write something to show you visited!</h1>
+                    <iframe style="width: 600px; min-height: 800px;" aria-label="Guestbook" id="guestbook" src="http://users4.smartgb.com/g/g.php?a=s&i=g44-83476-af" frameborder="0"></iframe>
                 </main>
                 
                 <aside id="rightSidebar">
                     <div id="clock"></div>
-                    <h2>Updates</h2>
-                    <div class="box">
-                        <p>I have recently updated this tool as of August 2022!</p>
-                        <ul style="padding-left:10px;">
-                            <li>Rewrote the JS to generate cleaner code</li>
-                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                            <li>Added a couple of new features!</li>
-                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-                        </ul>
-                    </div>
-                    <br>
                     <h2>Get my button! </h2>
                     <div class="box" style="resize: none; text-align: center;">
                     <textarea readonly wrap="soft" style="height: 180px; resize: none">&lt;a href="https://malgdon.neocities.org" target="_blank"&gt;&lt;img src="https://malgdon.neocities.org/Images/malscorner.png" alt="Mal's Corner"&gt;&lt;/a&gt;</textarea>

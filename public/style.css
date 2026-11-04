@@ -1,7 +1,6 @@
      :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+                --header-image: url('Images/banner.png');
 
-                --content: #43256E;
             }
 
             @font-face {
@@ -45,6 +44,7 @@
 
             * {
                 box-sizing: border-box;
+                cursor: url('Images/cursor.png'), auto;
             }
 
             #container {
@@ -98,17 +98,20 @@
             #navbar li {
                 padding-top: 10px;
                 text-align: center;
+                color: #ED64F5;
+                font-weight: 800;
+            }
+
+            #navbar li:hover {
+                color: #a49cba;
             }
 
             #navbar li a {
-                color: #ED64F5;
-                font-weight: 800;
                 text-decoration: none;
             }
 
             #navbar li a:hover {
                 color: #a49cba;
-                text-decoration: underline;
             }
 
             #flex {
@@ -121,7 +124,7 @@
                 align-items: center; 
                 text-align: center;
                 background: linear-gradient(180deg,rgba(20, 186, 178, 1) 0%, rgba(66, 201, 195, 1) 25%, rgba(145, 250, 250, 1) 75%, rgba(217, 255, 255, 1) 100%);
-                color: black;
+                color: rgb(0, 67, 78);
                 font-size: 2rem;
                 letter-spacing: 4px;
                 width: 100%;
