@@ -11,11 +11,11 @@
     <meta property="og:site_name" content="Mal's Corner">
     <meta property="og:title" content="Mal's Corner">
     <meta property="og:description" content="Personal website of Mal">
-    <meta property="og:image" content="https://malgdon.neocities.org/Images/bunny.png">
+    <meta property="og:image" content="Images/bunny.png">
     
     
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/x-icon" href="https://static-00.iconduck.com/assets.00/pensive-face-emoji-2048x2048-4ymv6hq5.png">
+    <link rel="icon" type="image/x-icon" href="Images/bunny.png">
     <script src="script.js" defer></script>
     
   </head>
@@ -31,7 +31,6 @@
                         <li><a href="aboutme.html">About</a></li>
                         <li><a href="collections.html">Collections</a></li>
                         <li><a href="guestbook.html">Guest Book</a></li>
-                        <li><a href="chatroom.html">Chatroom</a></li>
                         <li>
                             <details>
                                 <summary>Creations</summary>
@@ -64,29 +63,37 @@
                     </div>
                     <h1 id="Blinkies">Blinkies</h1>
                     <div class="box" style="text-align: center;">
-                        
+                        <img src="Images/ihatepopups.gif">
+                        <img src="Images/imbored.gif">
                     </div>
                     <h1 id="Stamps">Stamps</h1>
                     <div class="box" style="text-align: center;">
-                        
+                        <img src="Images/stayingup.gif">
                     </div>
 
-                    <br><br><br>
 
+                    <footer id="footer">Made by Mal, 2024-2026</footer>
                 </main>
                 
                 <aside id="rightSidebar">
                     <div id="clock"></div>
-                    <h2>Get my button! </h2>
+
+                    <center><h2>Get my button!</h2></center>
                     <div class="box" style="resize: none; text-align: center;">
-                    <textarea readonly wrap="soft" style="height: 180px; resize: none">&lt;a href="https://malgdon.neocities.org" target="_blank"&gt;&lt;img src="https://malgdon.neocities.org/Images/malscorner.png" alt="Mal's Corner"&gt;&lt;/a&gt;</textarea>
-                    <br>
-                    <a href="https://malgdon.neocities.org"><img src="Images/malscorner.png" alt="My Button" class="btn-88x31"></a> 
+                        <a href="https://malgdon.neocities.org"><img src="Images/malscorner.png" alt="My Button" class="btn-88x31"></a> 
+                        <br>
+                        <textarea readonly wrap="soft" style="height: 50px; resize: none" id="ButtonLink">&lt;a href="https://malgdon.neocities.org" target="_blank"&gt;&lt;img src="https://malgdon.neocities.org/Images/malscorner.png" alt="Mal's Corner"&gt;&lt;/a&gt;</textarea>
+                        <br>
+                        <button onclick="copyButtonLink()">Copy to Clipboard</button>
                     </div>
+
+                    <br>
+
+                    <iframe src="https://www5.cbox.ws/box/?boxid=961754&boxtag=Ivpzaa" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="1" marginwidth="0" scrolling="auto" class="chatbox"></iframe>	
                 </aside>
                 
             </div>
-            <footer id="footer">Made by Mal, 2024-2026</footer>
+
         </div>
         
   </body>
